@@ -39,13 +39,13 @@
                                                         <constraint firstAttribute="height" constant="110" id="f6s-a6-gOL"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bua-B8-5ZM">
-                                                    <rect key="frame" x="103" y="10" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bua-B8-5ZM">
+                                                    <rect key="frame" x="103" y="10" width="34" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onh-im-Wj9">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onh-im-Wj9">
                                                     <rect key="frame" x="103" y="39" width="232" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -103,11 +103,79 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="lHM-Yy-z1J" id="MPu-Sy-0Io"/>
+                        <segue destination="KKA-YT-M8W" kind="presentation" identifier="ToMovieDetail" id="ORW-aF-MXf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1080.8" y="792.95352323838085"/>
+        </scene>
+        <!--Movie Detail View Controller-->
+        <scene sceneID="n1r-bd-ZCV">
+            <objects>
+                <viewController id="KKA-YT-M8W" customClass="MovieDetailViewController" customModule="TenorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ACp-QQ-GlO"/>
+                        <viewControllerLayoutGuide type="bottom" id="TiI-MO-sPA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5wO-Mj-zlK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lk-fi-dKB">
+                                <rect key="frame" x="169" y="40" width="36.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFN-9H-yjd">
+                                <rect key="frame" x="15" y="76" width="345" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tV-zK-aRN">
+                                <rect key="frame" x="125" y="617" width="124" height="30"/>
+                                <state key="normal" title="Return to Film List"/>
+                                <connections>
+                                    <action selector="didTapReturnButton:" destination="KKA-YT-M8W" eventType="touchUpInside" id="xyD-km-jGk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqI-Bq-vxK">
+                                <rect key="frame" x="177" y="572" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="FCD-bl-hea"/>
+                                    <constraint firstAttribute="height" constant="20" id="zEt-Kg-ZQY"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="heartUnfilled"/>
+                                <connections>
+                                    <action selector="didTapFavoriteButton:" destination="KKA-YT-M8W" eventType="touchUpInside" id="DFt-wO-wqG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3tV-zK-aRN" firstAttribute="centerX" secondItem="5wO-Mj-zlK" secondAttribute="centerX" id="8Ar-Vv-KmV"/>
+                            <constraint firstItem="4lk-fi-dKB" firstAttribute="centerX" secondItem="5wO-Mj-zlK" secondAttribute="centerX" id="MTf-Dq-Yhu"/>
+                            <constraint firstItem="ZFN-9H-yjd" firstAttribute="leading" secondItem="5wO-Mj-zlK" secondAttribute="leading" constant="15" id="Nqo-na-CPw"/>
+                            <constraint firstAttribute="trailing" secondItem="ZFN-9H-yjd" secondAttribute="trailing" constant="15" id="S7d-im-Qc9"/>
+                            <constraint firstItem="4lk-fi-dKB" firstAttribute="top" secondItem="ACp-QQ-GlO" secondAttribute="bottom" constant="20" id="bZi-tI-gdU"/>
+                            <constraint firstItem="ZFN-9H-yjd" firstAttribute="top" secondItem="4lk-fi-dKB" secondAttribute="bottom" constant="15" id="iJH-Rb-i42"/>
+                            <constraint firstItem="3tV-zK-aRN" firstAttribute="top" secondItem="uqI-Bq-vxK" secondAttribute="bottom" constant="25" id="qsu-hR-siB"/>
+                            <constraint firstItem="uqI-Bq-vxK" firstAttribute="centerX" secondItem="5wO-Mj-zlK" secondAttribute="centerX" id="rCY-1t-Oen"/>
+                            <constraint firstItem="TiI-MO-sPA" firstAttribute="top" secondItem="3tV-zK-aRN" secondAttribute="bottom" constant="20" id="raP-pg-vmO"/>
+                            <constraint firstItem="ZFN-9H-yjd" firstAttribute="centerX" secondItem="5wO-Mj-zlK" secondAttribute="centerX" id="tju-zz-78q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="favoriteButton" destination="uqI-Bq-vxK" id="Bkf-7m-KN9"/>
+                        <outlet property="movieLongDescriptionLabel" destination="ZFN-9H-yjd" id="2Hr-Tp-ZZh"/>
+                        <outlet property="movieNameLabel" destination="4lk-fi-dKB" id="S4A-Bu-hMW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E2l-JU-bIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845.5999999999999" y="792.95352323838085"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VTB-Gx-6in">

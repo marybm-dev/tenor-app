@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var selectedMovie: Movie!
     var movies = [Movie]() {
         didSet {
             self.tableView.reloadData()
@@ -80,6 +81,13 @@ class ViewController: UIViewController {
             }
         }
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToMovieDetail" {
+            let movieDetailVC = segue.destination as! MovieDetailViewController
+            movieDetailVC.movie = selectedMovie
+        }
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -91,8 +99,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieTableViewCell
         
+        cell.tableView = tableView
         cell.movie = movies[indexPath.row]
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedMovie = movies[indexPath.row]
+        performSegue(withIdentifier: "ToMovieDetail", sender: nil)
     }
 }

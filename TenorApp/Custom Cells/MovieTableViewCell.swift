@@ -15,11 +15,12 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var movieDescriptionLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     
+    weak var tableView: UITableView!
+    
     var movie: Movie! {
         didSet {
             self.movieNameLabel.text = movie.name
             self.movieDescriptionLabel.text = movie.desc
-            self.favoriteButton.imageView?.image = #imageLiteral(resourceName: "heartUnfilled")
             
             // attempt to load image
             if let imagePath = movie.image {
@@ -44,17 +45,6 @@ class MovieTableViewCell: UITableViewCell {
     
     func imageToUse() -> UIImage {
         return self.movie.favorited ? #imageLiteral(resourceName: "heart_filled_outline") : #imageLiteral(resourceName: "heartUnfilled")
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

@@ -18,6 +18,7 @@
 		44DC46381EC78D71003C33F5 /* Films-critic.json in Resources */ = {isa = PBXBuildFile; fileRef = 44DC46361EC78D71003C33F5 /* Films-critic.json */; };
 		44DC46391EC78D71003C33F5 /* Films-user.json in Resources */ = {isa = PBXBuildFile; fileRef = 44DC46371EC78D71003C33F5 /* Films-user.json */; };
 		44DC463F1EC79632003C33F5 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DC463E1EC79632003C33F5 /* MovieTableViewCell.swift */; };
+		44DC46421EC7B786003C33F5 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DC46411EC7B786003C33F5 /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		44DC46361EC78D71003C33F5 /* Films-critic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Films-critic.json"; sourceTree = "<group>"; };
 		44DC46371EC78D71003C33F5 /* Films-user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Films-user.json"; sourceTree = "<group>"; };
 		44DC463E1EC79632003C33F5 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieTableViewCell.swift; path = "Custom Cells/MovieTableViewCell.swift"; sourceTree = "<group>"; };
+		44DC46411EC7B786003C33F5 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		913C28EC925DF44B1FAEA7CB /* Pods-TenorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenorApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TenorApp/Pods-TenorApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				44DC46221EC78468003C33F5 /* ViewController.swift */,
+				44DC46411EC7B786003C33F5 /* MovieDetailViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				44DC46231EC78468003C33F5 /* ViewController.swift in Sources */,
 				44DC46211EC78468003C33F5 /* AppDelegate.swift in Sources */,
 				44DC46331EC78984003C33F5 /* Movie.swift in Sources */,
+				44DC46421EC7B786003C33F5 /* MovieDetailViewController.swift in Sources */,
 				44DC46351EC78B13003C33F5 /* MovieClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +437,7 @@
 				44DC46311EC78468003C33F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
