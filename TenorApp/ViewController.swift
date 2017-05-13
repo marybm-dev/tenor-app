@@ -39,8 +39,7 @@ class ViewController: UIViewController {
         segmentControl.insertSegment(withTitle: "Critic Ratings", at: 1, animated: true)
         segmentControl.selectedSegmentIndex = 0
         segmentControl.addTarget(self, action: #selector(segmentControlAction(segmentControl:)), for: .valueChanged)
-        segmentBarItem = UIBarButtonItem(customView: segmentControl)
-        self.navigationItem.rightBarButtonItem = segmentBarItem
+        self.navigationItem.titleView = segmentControl
     }
 
     func segmentControlAction(segmentControl: UISegmentedControl) {
