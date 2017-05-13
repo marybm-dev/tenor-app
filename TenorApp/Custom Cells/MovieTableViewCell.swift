@@ -33,7 +33,7 @@ class MovieTableViewCell: UITableViewCell {
                 }
             }
             
-            // display the correct favorite heart
+            // display initial favorite heart
             self.favoriteButton.setImage(imageToUse(), for: .normal)
             
             // register for changes
@@ -43,7 +43,6 @@ class MovieTableViewCell: UITableViewCell {
 
     @IBAction func didTapFavoriteButton(_ sender: Any) {
         self.movie.favorited = !self.movie.favorited
-        self.favoriteButton.setImage(imageToUse(), for: .normal)
     }
     
     func imageToUse() -> UIImage {
