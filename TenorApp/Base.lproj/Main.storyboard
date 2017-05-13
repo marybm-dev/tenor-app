@@ -51,29 +51,33 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartUnfilled" translatesAutoresizingMaskIntoConstraints="NO" id="cvQ-Xa-J77">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyt-B4-bhN">
                                                     <rect key="frame" x="345" y="55.5" width="20" height="20"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="fag-yC-FLd"/>
-                                                        <constraint firstAttribute="width" constant="20" id="wK0-5C-EJj"/>
+                                                        <constraint firstAttribute="width" constant="20" id="R6Y-zX-Row"/>
+                                                        <constraint firstAttribute="height" constant="20" id="ZmY-Rt-u0W"/>
                                                     </constraints>
-                                                </imageView>
+                                                    <state key="normal" image="heartUnfilled"/>
+                                                    <connections>
+                                                        <action selector="didTapFavoriteButton:" destination="Hj8-Ch-7jv" eventType="touchUpInside" id="JDq-xn-yLR"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Onh-im-Wj9" firstAttribute="top" secondItem="bua-B8-5ZM" secondAttribute="bottom" constant="8" id="4i1-tZ-fOM"/>
                                                 <constraint firstItem="bua-B8-5ZM" firstAttribute="leading" secondItem="6Tl-t1-TX6" secondAttribute="trailing" constant="8" id="CGl-LZ-b20"/>
-                                                <constraint firstItem="cvQ-Xa-J77" firstAttribute="leading" secondItem="Onh-im-Wj9" secondAttribute="trailing" constant="10" id="Hza-Bi-8Bw"/>
                                                 <constraint firstItem="6Tl-t1-TX6" firstAttribute="leading" secondItem="GjI-eV-mUj" secondAttribute="leading" constant="15" id="RSX-Hl-YIz"/>
-                                                <constraint firstItem="cvQ-Xa-J77" firstAttribute="centerY" secondItem="GjI-eV-mUj" secondAttribute="centerY" id="Xzo-dr-zHH"/>
+                                                <constraint firstItem="Iyt-B4-bhN" firstAttribute="centerY" secondItem="GjI-eV-mUj" secondAttribute="centerY" id="Wtf-yv-3vW"/>
                                                 <constraint firstItem="6Tl-t1-TX6" firstAttribute="top" secondItem="GjI-eV-mUj" secondAttribute="top" constant="10" id="lOV-OO-oWn"/>
+                                                <constraint firstItem="Iyt-B4-bhN" firstAttribute="leading" secondItem="Onh-im-Wj9" secondAttribute="trailing" constant="10" id="mNC-AK-d7y"/>
+                                                <constraint firstAttribute="trailing" secondItem="Iyt-B4-bhN" secondAttribute="trailing" constant="10" id="mWB-X7-4zR"/>
                                                 <constraint firstItem="Onh-im-Wj9" firstAttribute="leading" secondItem="bua-B8-5ZM" secondAttribute="leading" id="mct-LG-n7o"/>
-                                                <constraint firstAttribute="trailing" secondItem="cvQ-Xa-J77" secondAttribute="trailing" constant="10" id="mdo-Vl-0Fb"/>
                                                 <constraint firstItem="bua-B8-5ZM" firstAttribute="top" secondItem="6Tl-t1-TX6" secondAttribute="top" id="sxD-TJ-x9v"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
-                                            <outlet property="favoritedImageView" destination="cvQ-Xa-J77" id="xui-rc-QCK"/>
+                                            <outlet property="favoriteButton" destination="Iyt-B4-bhN" id="xvZ-WU-Pe3"/>
                                             <outlet property="movieDescriptionLabel" destination="Onh-im-Wj9" id="J69-aZ-OzM"/>
                                             <outlet property="movieImageView" destination="6Tl-t1-TX6" id="8Xq-mA-YEU"/>
                                             <outlet property="movieNameLabel" destination="bua-B8-5ZM" id="cAh-4v-r6R"/>

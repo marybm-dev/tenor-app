@@ -13,13 +13,13 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var movieNameLabel: UILabel!
     @IBOutlet weak var movieDescriptionLabel: UILabel!
-    @IBOutlet weak var favoritedImageView: UIImageView!
+    @IBOutlet weak var favoriteButton: UIButton!
     
     var movie: Movie! {
         didSet {
             self.movieNameLabel.text = movie.name
             self.movieDescriptionLabel.text = movie.desc
-            self.favoritedImageView.image = #imageLiteral(resourceName: "heartUnfilled")
+            self.favoriteButton.imageView?.image = #imageLiteral(resourceName: "heartUnfilled")
             
             // attempt to load image
             if let imagePath = movie.image {
@@ -31,7 +31,19 @@ class MovieTableViewCell: UITableViewCell {
                     print(error.localizedDescription)
                 }
             }
+            
+            // display the correct favorite heart
+            self.favoriteButton.setImage(imageToUse(), for: .normal)
         }
+    }
+
+    @IBAction func didTapFavoriteButton(_ sender: Any) {
+        self.movie.favorited = !self.movie.favorited
+        self.favoriteButton.setImage(imageToUse(), for: .normal)
+    }
+    
+    func imageToUse() -> UIImage {
+        return self.movie.favorited ? #imageLiteral(resourceName: "heart_filled_outline") : #imageLiteral(resourceName: "heartUnfilled")
     }
     
     override func awakeFromNib() {
