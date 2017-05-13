@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         }
     }
     
+    var endPoint: MovieEndPoint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,21 +28,19 @@ class ViewController: UIViewController {
             if let theMovies = movies {
                 self?.movies = theMovies
             
+                
             } else {
-                
-                // display alert dialog that says the data was not found!
-                
+                // display alert dialog that says the data was not found
+                let alertController = UIAlertController(title: "Uh oh. Something went wrong", message: "Couldn't get movie data.", preferredStyle: UIAlertControllerStyle.alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
+                    print("OK")
+                }
+                alertController.addAction(okAction)
+                self?.present(alertController, animated: true, completion: nil)
             }
-            
         }
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
