@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 enum MovieEndPoint {
     case userRatings
@@ -49,17 +50,10 @@ class MovieClient {
         do {
             let fileURL = URL(fileURLWithPath: file)
             let data = try Data(contentsOf: fileURL)
-            let json = try JSONSerialization.jsonObject(with: data, options: [])
+            let jsonDict = JSON(data)
             
-            if let jsonDict = json as? [AnyObject] {
-                for movie in jsonDict {
-                    if let currentMovieDictionary = movie as? NSDictionary {
-                        movies.append(Movie(json: currentMovieDictionary))
-                    }
-                }
-                
-            } else {
-                return nil
+            for (_,movieJson):(String, JSON) in jsonDict {
+                movies.append(Movie(json: movieJson))
             }
             
         } catch {

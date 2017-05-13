@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30139CA78FCA923AECEC4173 /* Pods_TenorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA53F6D09F51D3FE17E0D60 /* Pods_TenorApp.framework */; };
 		44DC46211EC78468003C33F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DC46201EC78468003C33F5 /* AppDelegate.swift */; };
 		44DC46231EC78468003C33F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DC46221EC78468003C33F5 /* ViewController.swift */; };
 		44DC46261EC78468003C33F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44DC46241EC78468003C33F5 /* Main.storyboard */; };
@@ -16,9 +17,12 @@
 		44DC46351EC78B13003C33F5 /* MovieClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DC46341EC78B13003C33F5 /* MovieClient.swift */; };
 		44DC46381EC78D71003C33F5 /* Films-critic.json in Resources */ = {isa = PBXBuildFile; fileRef = 44DC46361EC78D71003C33F5 /* Films-critic.json */; };
 		44DC46391EC78D71003C33F5 /* Films-user.json in Resources */ = {isa = PBXBuildFile; fileRef = 44DC46371EC78D71003C33F5 /* Films-user.json */; };
+		44DC463F1EC79632003C33F5 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DC463E1EC79632003C33F5 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D9397A247F1E3B09B716867 /* Pods-TenorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenorApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TenorApp/Pods-TenorApp.release.xcconfig"; sourceTree = "<group>"; };
+		2FA53F6D09F51D3FE17E0D60 /* Pods_TenorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DC461D1EC78468003C33F5 /* TenorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DC46201EC78468003C33F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44DC46221EC78468003C33F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		44DC46341EC78B13003C33F5 /* MovieClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieClient.swift; path = API/MovieClient.swift; sourceTree = "<group>"; };
 		44DC46361EC78D71003C33F5 /* Films-critic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Films-critic.json"; sourceTree = "<group>"; };
 		44DC46371EC78D71003C33F5 /* Films-user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Films-user.json"; sourceTree = "<group>"; };
+		44DC463E1EC79632003C33F5 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieTableViewCell.swift; path = "Custom Cells/MovieTableViewCell.swift"; sourceTree = "<group>"; };
+		913C28EC925DF44B1FAEA7CB /* Pods-TenorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenorApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TenorApp/Pods-TenorApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30139CA78FCA923AECEC4173 /* Pods_TenorApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				44DC461F1EC78468003C33F5 /* TenorApp */,
 				44DC461E1EC78468003C33F5 /* Products */,
+				FC344587FAFF899731043575 /* Pods */,
+				DEC97B02E8A9A689C38BE93C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				44DC46201EC78468003C33F5 /* AppDelegate.swift */,
+				44DC46401EC797D3003C33F5 /* Custom Cells */,
 				44DC463C1EC78D84003C33F5 /* View Controllers */,
 				44DC463A1EC78D77003C33F5 /* Model */,
 				44DC463B1EC78D7D003C33F5 /* API */,
@@ -100,6 +110,31 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
+		44DC46401EC797D3003C33F5 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				44DC463E1EC79632003C33F5 /* MovieTableViewCell.swift */,
+			);
+			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		DEC97B02E8A9A689C38BE93C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FA53F6D09F51D3FE17E0D60 /* Pods_TenorApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC344587FAFF899731043575 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				913C28EC925DF44B1FAEA7CB /* Pods-TenorApp.debug.xcconfig */,
+				1D9397A247F1E3B09B716867 /* Pods-TenorApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44DC462F1EC78468003C33F5 /* Build configuration list for PBXNativeTarget "TenorApp" */;
 			buildPhases = (
+				4529F5422E4DCA2A165536AB /* [CP] Check Pods Manifest.lock */,
 				44DC46191EC78468003C33F5 /* Sources */,
 				44DC461A1EC78468003C33F5 /* Frameworks */,
 				44DC461B1EC78468003C33F5 /* Resources */,
+				FC2CBA4835199BF68A4878E0 /* [CP] Embed Pods Frameworks */,
+				16BF0B8F1D20DBC7A132FCEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,11 +208,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16BF0B8F1D20DBC7A132FCEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenorApp/Pods-TenorApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4529F5422E4DCA2A165536AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC2CBA4835199BF68A4878E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenorApp/Pods-TenorApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44DC46191EC78468003C33F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44DC463F1EC79632003C33F5 /* MovieTableViewCell.swift in Sources */,
 				44DC46231EC78468003C33F5 /* ViewController.swift in Sources */,
 				44DC46211EC78468003C33F5 /* AppDelegate.swift in Sources */,
 				44DC46331EC78984003C33F5 /* Movie.swift in Sources */,
@@ -301,6 +388,7 @@
 		};
 		44DC46301EC78468003C33F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 913C28EC925DF44B1FAEA7CB /* Pods-TenorApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6NZ47HJYTD;
@@ -314,6 +402,7 @@
 		};
 		44DC46311EC78468003C33F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D9397A247F1E3B09B716867 /* Pods-TenorApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6NZ47HJYTD;

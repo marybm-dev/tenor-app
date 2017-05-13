@@ -7,20 +7,21 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class Movie {
-    var id: Int
-    var name: String
-    var image: URL
-    var desc: String
-    var longDesc: String
+    var id: Int?
+    var name: String?
+    var image: URL?
+    var desc: String?
+    var longDesc: String?
     var favorited: Bool = false
     
-    init(json: NSDictionary) {
-        id = json["id"] as! Int
-        name = json["name"] as! String
-        image = URL(fileURLWithPath: (json["image"] as! String))
-        desc = json["desc"] as! String
-        longDesc = json["long_desc"] as! String
+    init(json: JSON) {
+        id = json["id"].int
+        name = json["name"].string
+        image = json["image"].url
+        desc = json["desc"].string
+        longDesc = json["long_desc"].string
     }
 }
