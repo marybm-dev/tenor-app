@@ -96,14 +96,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="eSp-sV-Pbk">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="eOK-R2-rCB">
-                            <rect key="frame" x="91" y="7" width="193" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="User Ratings"/>
-                                <segment title="Critic Ratings"/>
-                            </segments>
-                        </segmentedControl>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="lHM-Yy-z1J" id="MPu-Sy-0Io"/>
