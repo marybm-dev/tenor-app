@@ -73,6 +73,7 @@ class ViewController: UIViewController {
                 }
                 
                 self?.movies = newMovies
+                self?.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
 
             } else {
                 // display alert dialog that says the data was not found
