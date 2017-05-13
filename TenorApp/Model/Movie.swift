@@ -9,13 +9,13 @@
 import Foundation
 import SwiftyJSON
 
-class Movie {
+class Movie: NSObject {
     var id: Int?
     var name: String?
     var image: URL?
     var desc: String?
     var longDesc: String?
-    var favorited: Bool = false
+    dynamic var favorited: Bool = false
     
     init(json: JSON) {
         id = json["id"].int

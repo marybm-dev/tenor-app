@@ -35,6 +35,9 @@ class MovieTableViewCell: UITableViewCell {
             
             // display the correct favorite heart
             self.favoriteButton.setImage(imageToUse(), for: .normal)
+            
+            // register for changes
+            addObserver(self, forKeyPath: #keyPath(movie.favorited), options: [.old, .new], context: nil)
         }
     }
 
@@ -47,4 +50,17 @@ class MovieTableViewCell: UITableViewCell {
         return self.movie.favorited ? #imageLiteral(resourceName: "heart_filled_outline") : #imageLiteral(resourceName: "heartUnfilled")
     }
 
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == #keyPath(movie.favorited) {
+            self.favoriteButton.setImage(imageToUse(), for: .normal)
+        }
+    }
+    
+    override func prepareForReuse() {
+        removeObserver(self, forKeyPath: #keyPath(movie.favorited))
+    }
+    
+    deinit {
+        removeObserver(self, forKeyPath: #keyPath(movie.favorited))
+    }
 }
