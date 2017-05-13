@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KVNProgress
 
 class ViewController: UIViewController {
 
@@ -21,7 +22,11 @@ class ViewController: UIViewController {
     
     var endPoint: MovieEndPoint! {
         didSet {
-            self.loadData()
+            KVNProgress.show()
+            // add delay to view activity indicator
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
+                self.loadData()
+            }
         }
     }
     let segmentControl = UISegmentedControl()
@@ -63,7 +68,6 @@ class ViewController: UIViewController {
                         return $0.id == movie.id
                         
                     }))! { } else {
-
                         newMovies.append(movie)
                     }
                 }
@@ -79,6 +83,8 @@ class ViewController: UIViewController {
                 alertController.addAction(okAction)
                 self?.present(alertController, animated: true, completion: nil)
             }
+            
+            KVNProgress.dismiss()
         }
     }
 

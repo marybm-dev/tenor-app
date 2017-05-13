@@ -7,76 +7,141 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DDFD23FCE5FBD9E4508988CB26F1291 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		2E80EF99DCCB6F1C85D969775A49E713 /* Pods-TenorApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C819E22B46D34F938184D3C5D3F765C /* Pods-TenorApp-dummy.m */; };
-		4C2111626C1400C78449F8F31FD87BC3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
-		584057EF5720346742230AC66F86E04A /* Pods-TenorApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F72ABF364269C8FD4482D7F48F5EB18 /* Pods-TenorApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E8329FEC3C960E9DFBFFB643B3D5581 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */; };
-		913C8D29D5E8663796986782959D6443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		B879704D327379459E363B66A4202722 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01FC08A2F68103E1D4D1039ACA7BC748 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CA2A0EC370F389586EDC592ABC59468 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0264065EED2F20E5E9D79F245A600F92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8204C888710FF84D52C0E2A7FDE1C95 /* Foundation.framework */; };
+		176989015A543276704F966B3FC0E67F /* UIImage+KVNEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = D4EE1EDCDBBE321BD9DE37E7B388E189 /* UIImage+KVNEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22D45CA91D5840732E94CAEE6FF4462E /* Pods-TenorApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F72ABF364269C8FD4482D7F48F5EB18 /* Pods-TenorApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506FF82754E436BA3B88163094619328 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8204C888710FF84D52C0E2A7FDE1C95 /* Foundation.framework */; };
+		5E546F2CD2695654EB5DED2A8CAB8541 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD9B6F8CA8E5C0237DB66738893BB6 /* SwiftyJSON-dummy.m */; };
+		61B16CE8BEF825B29F79AD73A89147E9 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F97CDD09FA57FE7AA4A0C91DAC42EA /* GLKit.framework */; };
+		623E86F907ACAF05C7D5F437F5189F9B /* UIColor+KVNContrast.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B7AA39464B0C34B08A4FE40B6B8BBFE /* UIColor+KVNContrast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6699DCBFA891A61E170F6731CBCADA5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8204C888710FF84D52C0E2A7FDE1C95 /* Foundation.framework */; };
+		6E4A6A8F4FD1C5562A564E0F79476870 /* KVNProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C0E1746409B511CF64005929D417DA /* KVNProgressView.xib */; };
+		6F015CE6EB028FCAEC34271AB1417685 /* UIColor+KVNContrast.m in Sources */ = {isa = PBXBuildFile; fileRef = 114B78C2E3E992E6A83735E50EB6631D /* UIColor+KVNContrast.m */; };
+		727354FE57A7AAA0B11C88B4A64347D2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C74A59197180EE47B8002EE2CE3C2 /* SwiftyJSON.swift */; };
+		8A0ABE666FD6B66ACF835CA55F3D0E03 /* Pods-TenorApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C819E22B46D34F938184D3C5D3F765C /* Pods-TenorApp-dummy.m */; };
+		912E9BC052D9ED36E9A586C2F9B1A954 /* UIImage+KVNImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F00FE21374BF719A49F714237FE669 /* UIImage+KVNImageEffects.m */; };
+		9C570987FA4FF102737BFF8350BB7BB8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B38C833D724C92FE336D7150D1DAC3 /* QuartzCore.framework */; };
+		A9D13F93EECB898FD9136234180D3875 /* KVNProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 8689A5428068378E9FB4E70478C89C61 /* KVNProgress.m */; };
+		AF1813E6ABD7EBF8D2361B9ACE72A894 /* KVNProgressConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = CBF723FFC381200CCB76D983CB4CF4FF /* KVNProgressConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5EA31C1EB80BB5C74E4A258F5A3E15F /* UIImage+KVNEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 802A74FE18F70A9B82C2A5873729FA0B /* UIImage+KVNEmpty.m */; };
+		D7DC140F63B94AE2752473BA5A1036B3 /* KVNRotationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 780C28FCD6008E38A4C466C1BC70D10F /* KVNRotationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB07461A48A7A8DCDC654FB8BD8EC45A /* KVNProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C83C4B1D1C202663C1FE6382BCEAD598 /* KVNProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC6457AF762D0DDF0C07EDD06FD84141 /* KVNProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = CB5487BF51C1012DA31C488E57194C35 /* KVNProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E446E59C1EB3112CB388D3DFAFE39E6A /* KVNProgressConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C5FDC29AF51C286D3627239328166 /* KVNProgressConfiguration.m */; };
+		F0EBDEE66ECE575E113AC43F8CC67642 /* KVNRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D6AF78764BCAC0EAE8FFE28082CF25 /* KVNRotationViewController.m */; };
+		FC7FAFE4E22D440B924E271ADFD180FC /* KVNProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE49ADE458268FC4EB12E8A6B8966D0 /* KVNProgress-dummy.m */; };
+		FD50B44A26DC8DFD895382DC0FB61AA9 /* UIImage+KVNImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C423DE9198080528DACE99D9451168 /* UIImage+KVNImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		50B2F42FF0DE2962FCAAF52C0625BC17 /* PBXContainerItemProxy */ = {
+		22497EDE132A8F8BB640E864DAF74E91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BEC3B18673768E1309A222FB4B2C98BB;
+			remoteGlobalIDString = 1CC71F9CD5545E32178492A81594B457;
+			remoteInfo = KVNProgress;
+		};
+		701854D592E10ED8484F4E0179495FCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48C4B291633AAEF2E47DADBF3D077261;
 			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		040C5FDC29AF51C286D3627239328166 /* KVNProgressConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNProgressConfiguration.m; path = KVNProgress/Classes/KVNProgressConfiguration.m; sourceTree = "<group>"; };
+		05C423DE9198080528DACE99D9451168 /* UIImage+KVNImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+KVNImageEffects.h"; path = "KVNProgress/Categories/UIImage+KVNImageEffects.h"; sourceTree = "<group>"; };
+		08AFE366654C0DDF825384D50994C0E0 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		0B7AA39464B0C34B08A4FE40B6B8BBFE /* UIColor+KVNContrast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+KVNContrast.h"; path = "KVNProgress/Categories/UIColor+KVNContrast.h"; sourceTree = "<group>"; };
+		114B78C2E3E992E6A83735E50EB6631D /* UIColor+KVNContrast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+KVNContrast.m"; path = "KVNProgress/Categories/UIColor+KVNContrast.m"; sourceTree = "<group>"; };
+		11F00FE21374BF719A49F714237FE669 /* UIImage+KVNImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KVNImageEffects.m"; path = "KVNProgress/Categories/UIImage+KVNImageEffects.m"; sourceTree = "<group>"; };
+		21F97CDD09FA57FE7AA4A0C91DAC42EA /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
 		2812E0DB6B83D498DCF1D3840F59A1D6 /* Pods-TenorApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TenorApp.modulemap"; sourceTree = "<group>"; };
-		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		3E5AA8AAA52EEE9D3AB9FFD4EA5AE344 /* Pods_TenorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TenorApp.framework; path = "Pods-TenorApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C8B10B2F92D192D2E348DABDAD12210 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		3023A7C2153D2D19CD2FE8688DF8DBF6 /* Pods_TenorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TenorApp.framework; path = "Pods-TenorApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A0516970093AB58577034E876EDC2F /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		3AFD9B6F8CA8E5C0237DB66738893BB6 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		3DF878EDF2D44C266DA114257468FA7F /* KVNProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KVNProgress.modulemap; sourceTree = "<group>"; };
 		480E4BF2EEDBBE99439209DED8BA6F50 /* Pods-TenorApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TenorApp-frameworks.sh"; sourceTree = "<group>"; };
+		52B38C833D724C92FE336D7150D1DAC3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		58F96CF63576465AD2A7D9A4DF8D7B43 /* Pods-TenorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TenorApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6AC7D6C8C406C9149E5C630912B6D2D1 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		714A39DF222D7AE0EC02E6EAB03C38BF /* Pods-TenorApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TenorApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		780C28FCD6008E38A4C466C1BC70D10F /* KVNRotationViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNRotationViewController.h; path = KVNProgress/Classes/KVNRotationViewController.h; sourceTree = "<group>"; };
 		7C819E22B46D34F938184D3C5D3F765C /* Pods-TenorApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TenorApp-dummy.m"; sourceTree = "<group>"; };
+		7CA2A0EC370F389586EDC592ABC59468 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		7F72ABF364269C8FD4482D7F48F5EB18 /* Pods-TenorApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TenorApp-umbrella.h"; sourceTree = "<group>"; };
+		802A74FE18F70A9B82C2A5873729FA0B /* UIImage+KVNEmpty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KVNEmpty.m"; path = "KVNProgress/Categories/UIImage+KVNEmpty.m"; sourceTree = "<group>"; };
+		8689A5428068378E9FB4E70478C89C61 /* KVNProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNProgress.m; path = KVNProgress/Classes/KVNProgress.m; sourceTree = "<group>"; };
 		8A5620DCD0EA93FCBC62180C42AD0CEC /* Pods-TenorApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TenorApp-resources.sh"; sourceTree = "<group>"; };
+		8AE49ADE458268FC4EB12E8A6B8966D0 /* KVNProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVNProgress-dummy.m"; sourceTree = "<group>"; };
+		8C7E40583728C1A7A88EFD39658EC41F /* KVNProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KVNProgress.framework; path = KVNProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93648D96587A0563055ACDD8B28D765B /* Pods-TenorApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TenorApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E8D045B3B2D8FBC3A8727AE7D052FC1 /* KVNProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVNProgress-prefix.pch"; sourceTree = "<group>"; };
 		A1729F41AD11D45FAA0EF084EFD5685E /* Pods-TenorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TenorApp.release.xcconfig"; sourceTree = "<group>"; };
-		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C7D6AF78764BCAC0EAE8FFE28082CF25 /* KVNRotationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNRotationViewController.m; path = KVNProgress/Classes/KVNRotationViewController.m; sourceTree = "<group>"; };
+		C8204C888710FF84D52C0E2A7FDE1C95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C83C4B1D1C202663C1FE6382BCEAD598 /* KVNProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVNProgress-umbrella.h"; sourceTree = "<group>"; };
+		CB5487BF51C1012DA31C488E57194C35 /* KVNProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNProgress.h; path = KVNProgress/Classes/KVNProgress.h; sourceTree = "<group>"; };
+		CBF723FFC381200CCB76D983CB4CF4FF /* KVNProgressConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNProgressConfiguration.h; path = KVNProgress/Classes/KVNProgressConfiguration.h; sourceTree = "<group>"; };
 		CF33A63D0C9FA82DE08E9F7438D7ADE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		EBB100F1A79E7630C5624D5EEB12C578 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4EE1EDCDBBE321BD9DE37E7B388E189 /* UIImage+KVNEmpty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+KVNEmpty.h"; path = "KVNProgress/Categories/UIImage+KVNEmpty.h"; sourceTree = "<group>"; };
+		E0B25FFC693418D8B4F01A37E59CDDE1 /* KVNProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVNProgress.xcconfig; sourceTree = "<group>"; };
+		E4962F11E67EBB8E5F5C3456BF9861D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52C74A59197180EE47B8002EE2CE3C2 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		E8BBD5A57D4ACD62F1C381BE59F992B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7C0E1746409B511CF64005929D417DA /* KVNProgressView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KVNProgressView.xib; path = KVNProgress/Resources/KVNProgressView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00D84E8060EA92CD8681C7EE92582F2B /* Frameworks */ = {
+		3567DD2C39DA61F763617B19BB45FF2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DDFD23FCE5FBD9E4508988CB26F1291 /* Foundation.framework in Frameworks */,
+				0264065EED2F20E5E9D79F245A600F92 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36D732C324F668905D2F2368E79C5512 /* Frameworks */ = {
+		485E10C678BCA805118F3F0FA0EBF124 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				913C8D29D5E8663796986782959D6443 /* Foundation.framework in Frameworks */,
+				6699DCBFA891A61E170F6731CBCADA5C /* Foundation.framework in Frameworks */,
+				61B16CE8BEF825B29F79AD73A89147E9 /* GLKit.framework in Frameworks */,
+				9C570987FA4FF102737BFF8350BB7BB8 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EADA94BE4DC3BBBC40F19A09503C235A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506FF82754E436BA3B88163094619328 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16FED9FF37D180FB3A47AF62D15E98B2 /* Products */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3E5AA8AAA52EEE9D3AB9FFD4EA5AE344 /* Pods_TenorApp.framework */,
-				EBB100F1A79E7630C5624D5EEB12C578 /* SwiftyJSON.framework */,
+				AF62A72BFFBB645BC76639BC1DEB7DB4 /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		151F8BBCB5DE79BAD997CB417A4F5DD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39E303C813A72E4A883933B331469B04 /* KVNProgress */,
+				3FD35EB975D4F9CAC9ECD8237B63A96D /* SwiftyJSON */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		1EFAB2FFDFAF0A5ABE2DB26906DAFC29 /* Pods-TenorApp */ = {
@@ -97,63 +162,103 @@
 			path = "Target Support Files/Pods-TenorApp";
 			sourceTree = "<group>";
 		};
-		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
+		309833BCF082B9758149A47C6B3512DD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
-				8EC39E1DC11846207722B71AAFE40F98 /* Support Files */,
+				E8BBD5A57D4ACD62F1C381BE59F992B9 /* Info.plist */,
+				3DF878EDF2D44C266DA114257468FA7F /* KVNProgress.modulemap */,
+				E0B25FFC693418D8B4F01A37E59CDDE1 /* KVNProgress.xcconfig */,
+				8AE49ADE458268FC4EB12E8A6B8966D0 /* KVNProgress-dummy.m */,
+				9E8D045B3B2D8FBC3A8727AE7D052FC1 /* KVNProgress-prefix.pch */,
+				C83C4B1D1C202663C1FE6382BCEAD598 /* KVNProgress-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KVNProgress";
+			sourceTree = "<group>";
+		};
+		39E303C813A72E4A883933B331469B04 /* KVNProgress */ = {
+			isa = PBXGroup;
+			children = (
+				CB5487BF51C1012DA31C488E57194C35 /* KVNProgress.h */,
+				8689A5428068378E9FB4E70478C89C61 /* KVNProgress.m */,
+				CBF723FFC381200CCB76D983CB4CF4FF /* KVNProgressConfiguration.h */,
+				040C5FDC29AF51C286D3627239328166 /* KVNProgressConfiguration.m */,
+				780C28FCD6008E38A4C466C1BC70D10F /* KVNRotationViewController.h */,
+				C7D6AF78764BCAC0EAE8FFE28082CF25 /* KVNRotationViewController.m */,
+				0B7AA39464B0C34B08A4FE40B6B8BBFE /* UIColor+KVNContrast.h */,
+				114B78C2E3E992E6A83735E50EB6631D /* UIColor+KVNContrast.m */,
+				D4EE1EDCDBBE321BD9DE37E7B388E189 /* UIImage+KVNEmpty.h */,
+				802A74FE18F70A9B82C2A5873729FA0B /* UIImage+KVNEmpty.m */,
+				05C423DE9198080528DACE99D9451168 /* UIImage+KVNImageEffects.h */,
+				11F00FE21374BF719A49F714237FE669 /* UIImage+KVNImageEffects.m */,
+				4F5C771E70EB25DD05B0FA70B3E63EEB /* Resources */,
+				309833BCF082B9758149A47C6B3512DD /* Support Files */,
+			);
+			name = KVNProgress;
+			path = KVNProgress;
+			sourceTree = "<group>";
+		};
+		3FD35EB975D4F9CAC9ECD8237B63A96D /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				E52C74A59197180EE47B8002EE2CE3C2 /* SwiftyJSON.swift */,
+				D8B79CC39E524717E3784403B1AB32FE /* Support Files */,
 			);
 			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+		4F5C771E70EB25DD05B0FA70B3E63EEB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+				F7C0E1746409B511CF64005929D417DA /* KVNProgressView.xib */,
 			);
-			name = iOS;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
-				16FED9FF37D180FB3A47AF62D15E98B2 /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				151F8BBCB5DE79BAD997CB417A4F5DD4 /* Pods */,
+				FB7B108A2D56E71E9B357145E2EA8FA5 /* Products */,
 				FCF8738A112E1BA430B9A09E010D270D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8EC39E1DC11846207722B71AAFE40F98 /* Support Files */ = {
+		AF62A72BFFBB645BC76639BC1DEB7DB4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */,
-				D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */,
-				2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */,
-				32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */,
-				BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */,
-				05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */,
+				C8204C888710FF84D52C0E2A7FDE1C95 /* Foundation.framework */,
+				21F97CDD09FA57FE7AA4A0C91DAC42EA /* GLKit.framework */,
+				52B38C833D724C92FE336D7150D1DAC3 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D8B79CC39E524717E3784403B1AB32FE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4962F11E67EBB8E5F5C3456BF9861D2 /* Info.plist */,
+				2C8B10B2F92D192D2E348DABDAD12210 /* SwiftyJSON.modulemap */,
+				39A0516970093AB58577034E876EDC2F /* SwiftyJSON.xcconfig */,
+				3AFD9B6F8CA8E5C0237DB66738893BB6 /* SwiftyJSON-dummy.m */,
+				08AFE366654C0DDF825384D50994C0E0 /* SwiftyJSON-prefix.pch */,
+				7CA2A0EC370F389586EDC592ABC59468 /* SwiftyJSON-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		FB7B108A2D56E71E9B357145E2EA8FA5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				8C7E40583728C1A7A88EFD39658EC41F /* KVNProgress.framework */,
+				3023A7C2153D2D19CD2FE8688DF8DBF6 /* Pods_TenorApp.framework */,
+				6AC7D6C8C406C9149E5C630912B6D2D1 /* SwiftyJSON.framework */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
-			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		FCF8738A112E1BA430B9A09E010D270D /* Targets Support Files */ = {
@@ -167,50 +272,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		17EAB33D1D686830F8E373646B4CEE77 /* Headers */ = {
+		16E39D8502EDA6B4FCBB15D46FEC259B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				584057EF5720346742230AC66F86E04A /* Pods-TenorApp-umbrella.h in Headers */,
+				22D45CA91D5840732E94CAEE6FF4462E /* Pods-TenorApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC92CA5E0498FC27FCEA8607B33770E8 /* Headers */ = {
+		A21F379DF21BF64210CF84C2E90FD43F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B879704D327379459E363B66A4202722 /* SwiftyJSON-umbrella.h in Headers */,
+				01FC08A2F68103E1D4D1039ACA7BC748 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4866DEA7924BE2515A9A8B745727BE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB07461A48A7A8DCDC654FB8BD8EC45A /* KVNProgress-umbrella.h in Headers */,
+				DC6457AF762D0DDF0C07EDD06FD84141 /* KVNProgress.h in Headers */,
+				AF1813E6ABD7EBF8D2361B9ACE72A894 /* KVNProgressConfiguration.h in Headers */,
+				D7DC140F63B94AE2752473BA5A1036B3 /* KVNRotationViewController.h in Headers */,
+				623E86F907ACAF05C7D5F437F5189F9B /* UIColor+KVNContrast.h in Headers */,
+				176989015A543276704F966B3FC0E67F /* UIImage+KVNEmpty.h in Headers */,
+				FD50B44A26DC8DFD895382DC0FB61AA9 /* UIImage+KVNImageEffects.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9D0A3C1F81197B0741D90FD1C669D222 /* Pods-TenorApp */ = {
+		1CC71F9CD5545E32178492A81594B457 /* KVNProgress */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE63FE0200B520297459DADCE1B6E9D6 /* Build configuration list for PBXNativeTarget "Pods-TenorApp" */;
+			buildConfigurationList = 2582C843A4A80BBDED4E4ED70076FB22 /* Build configuration list for PBXNativeTarget "KVNProgress" */;
 			buildPhases = (
-				D67D78B9487FCE6D713520D338BB5C1B /* Sources */,
-				00D84E8060EA92CD8681C7EE92582F2B /* Frameworks */,
-				17EAB33D1D686830F8E373646B4CEE77 /* Headers */,
+				DB83E44370D5C0E75315966FBCB55D9D /* Sources */,
+				485E10C678BCA805118F3F0FA0EBF124 /* Frameworks */,
+				D4866DEA7924BE2515A9A8B745727BE0 /* Headers */,
+				417095D5A748014A22D75C2D477BD42D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0883BC5C79F99F585BD22EED027FA8E6 /* PBXTargetDependency */,
 			);
-			name = "Pods-TenorApp";
-			productName = "Pods-TenorApp";
-			productReference = 3E5AA8AAA52EEE9D3AB9FFD4EA5AE344 /* Pods_TenorApp.framework */;
+			name = KVNProgress;
+			productName = KVNProgress;
+			productReference = 8C7E40583728C1A7A88EFD39658EC41F /* KVNProgress.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BEC3B18673768E1309A222FB4B2C98BB /* SwiftyJSON */ = {
+		48C4B291633AAEF2E47DADBF3D077261 /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAB40C7CFD744E415FDE01D92A0485A0 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 18E1AA03934702F21E77BCCD9786F40C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				776E297F1B2CCA2923EDCD94683DC9C0 /* Sources */,
-				36D732C324F668905D2F2368E79C5512 /* Frameworks */,
-				DC92CA5E0498FC27FCEA8607B33770E8 /* Headers */,
+				9989B40154EE587D0B6347D2E56BF326 /* Sources */,
+				EADA94BE4DC3BBBC40F19A09503C235A /* Frameworks */,
+				A21F379DF21BF64210CF84C2E90FD43F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -218,7 +337,26 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = EBB100F1A79E7630C5624D5EEB12C578 /* SwiftyJSON.framework */;
+			productReference = 6AC7D6C8C406C9149E5C630912B6D2D1 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1DCD908E8F287DAD8B338C52842EDB8 /* Pods-TenorApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87FB88F6584CB919FEE046762CA82D05 /* Build configuration list for PBXNativeTarget "Pods-TenorApp" */;
+			buildPhases = (
+				A0DECFD712647432E14224C172BFBFEF /* Sources */,
+				3567DD2C39DA61F763617B19BB45FF2E /* Frameworks */,
+				16E39D8502EDA6B4FCBB15D46FEC259B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				270774E247E85290BBFD86F59EB598DE /* PBXTargetDependency */,
+				7C3695091A64B15CDDD11D4A75CD4560 /* PBXTargetDependency */,
+			);
+			name = "Pods-TenorApp";
+			productName = "Pods-TenorApp";
+			productReference = 3023A7C2153D2D19CD2FE8688DF8DBF6 /* Pods_TenorApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -238,42 +376,74 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 16FED9FF37D180FB3A47AF62D15E98B2 /* Products */;
+			productRefGroup = FB7B108A2D56E71E9B357145E2EA8FA5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D0A3C1F81197B0741D90FD1C669D222 /* Pods-TenorApp */,
-				BEC3B18673768E1309A222FB4B2C98BB /* SwiftyJSON */,
+				1CC71F9CD5545E32178492A81594B457 /* KVNProgress */,
+				E1DCD908E8F287DAD8B338C52842EDB8 /* Pods-TenorApp */,
+				48C4B291633AAEF2E47DADBF3D077261 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		776E297F1B2CCA2923EDCD94683DC9C0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		417095D5A748014A22D75C2D477BD42D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E8329FEC3C960E9DFBFFB643B3D5581 /* SwiftyJSON-dummy.m in Sources */,
-				4C2111626C1400C78449F8F31FD87BC3 /* SwiftyJSON.swift in Sources */,
+				6E4A6A8F4FD1C5562A564E0F79476870 /* KVNProgressView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D67D78B9487FCE6D713520D338BB5C1B /* Sources */ = {
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9989B40154EE587D0B6347D2E56BF326 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E80EF99DCCB6F1C85D969775A49E713 /* Pods-TenorApp-dummy.m in Sources */,
+				5E546F2CD2695654EB5DED2A8CAB8541 /* SwiftyJSON-dummy.m in Sources */,
+				727354FE57A7AAA0B11C88B4A64347D2 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DECFD712647432E14224C172BFBFEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0ABE666FD6B66ACF835CA55F3D0E03 /* Pods-TenorApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB83E44370D5C0E75315966FBCB55D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7FAFE4E22D440B924E271ADFD180FC /* KVNProgress-dummy.m in Sources */,
+				A9D13F93EECB898FD9136234180D3875 /* KVNProgress.m in Sources */,
+				E446E59C1EB3112CB388D3DFAFE39E6A /* KVNProgressConfiguration.m in Sources */,
+				F0EBDEE66ECE575E113AC43F8CC67642 /* KVNRotationViewController.m in Sources */,
+				6F015CE6EB028FCAEC34271AB1417685 /* UIColor+KVNContrast.m in Sources */,
+				C5EA31C1EB80BB5C74E4A258F5A3E15F /* UIImage+KVNEmpty.m in Sources */,
+				912E9BC052D9ED36E9A586C2F9B1A954 /* UIImage+KVNImageEffects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0883BC5C79F99F585BD22EED027FA8E6 /* PBXTargetDependency */ = {
+		270774E247E85290BBFD86F59EB598DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KVNProgress;
+			target = 1CC71F9CD5545E32178492A81594B457 /* KVNProgress */;
+			targetProxy = 22497EDE132A8F8BB640E864DAF74E91 /* PBXContainerItemProxy */;
+		};
+		7C3695091A64B15CDDD11D4A75CD4560 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = BEC3B18673768E1309A222FB4B2C98BB /* SwiftyJSON */;
-			targetProxy = 50B2F42FF0DE2962FCAAF52C0625BC17 /* PBXContainerItemProxy */;
+			target = 48C4B291633AAEF2E47DADBF3D077261 /* SwiftyJSON */;
+			targetProxy = 701854D592E10ED8484F4E0179495FCE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -318,9 +488,41 @@
 			};
 			name = Release;
 		};
-		22583E7AF69422DF493E61B18186A875 /* Debug */ = {
+		1657AF88DF168FE0FAC163C82F4338D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = E0B25FFC693418D8B4F01A37E59CDDE1 /* KVNProgress.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KVNProgress/KVNProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVNProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KVNProgress/KVNProgress.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KVNProgress;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		708909D08F0D1767BF6A7A3B195B2F2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39A0516970093AB58577034E876EDC2F /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -351,45 +553,9 @@
 			};
 			name = Debug;
 		};
-		2BD4CE2319F67E99B59A80215F3DC0A2 /* Debug */ = {
+		8E75449A0DB8F2CFBD758CFB65124A87 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58F96CF63576465AD2A7D9A4DF8D7B43 /* Pods-TenorApp.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TenorApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TenorApp/Pods-TenorApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TenorApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A244C354B0582BE038D558DA64C424E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 39A0516970093AB58577034E876EDC2F /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -419,7 +585,7 @@
 			};
 			name = Release;
 		};
-		AD354ABDACBE970A8C7B231F466144A1 /* Release */ = {
+		C2BEF74419FA798F69F0DC42DBA25B07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A1729F41AD11D45FAA0EF084EFD5685E /* Pods-TenorApp.release.xcconfig */;
 			buildSettings = {
@@ -498,9 +664,95 @@
 			};
 			name = Debug;
 		};
+		CB5593DBCA6913A7B4A95926EF45D9C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0B25FFC693418D8B4F01A37E59CDDE1 /* KVNProgress.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KVNProgress/KVNProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVNProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KVNProgress/KVNProgress.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KVNProgress;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E1617BC8FA30163ABE358DB752A66461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58F96CF63576465AD2A7D9A4DF8D7B43 /* Pods-TenorApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TenorApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TenorApp/Pods-TenorApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TenorApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18E1AA03934702F21E77BCCD9786F40C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708909D08F0D1767BF6A7A3B195B2F2E /* Debug */,
+				8E75449A0DB8F2CFBD758CFB65124A87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2582C843A4A80BBDED4E4ED70076FB22 /* Build configuration list for PBXNativeTarget "KVNProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1657AF88DF168FE0FAC163C82F4338D6 /* Debug */,
+				CB5593DBCA6913A7B4A95926EF45D9C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -510,20 +762,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE63FE0200B520297459DADCE1B6E9D6 /* Build configuration list for PBXNativeTarget "Pods-TenorApp" */ = {
+		87FB88F6584CB919FEE046762CA82D05 /* Build configuration list for PBXNativeTarget "Pods-TenorApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2BD4CE2319F67E99B59A80215F3DC0A2 /* Debug */,
-				AD354ABDACBE970A8C7B231F466144A1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAB40C7CFD744E415FDE01D92A0485A0 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22583E7AF69422DF493E61B18186A875 /* Debug */,
-				A244C354B0582BE038D558DA64C424E3 /* Release */,
+				E1617BC8FA30163ABE358DB752A66461 /* Debug */,
+				C2BEF74419FA798F69F0DC42DBA25B07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

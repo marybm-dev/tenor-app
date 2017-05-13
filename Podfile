@@ -7,4 +7,5 @@ target 'TenorApp' do
 
   # Pods for TenorApp
   pod 'SwiftyJSON'
+  pod 'KVNProgress'
 end
