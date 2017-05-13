@@ -12,9 +12,28 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var movies: [Movie]! {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        MovieClient.movies(endPoint: .criticRatings) { [weak self] (movies: [Movie]?, error: Error?) in
+            
+            if let theMovies = movies {
+                self?.movies = theMovies
+            
+            } else {
+                
+                // display alert dialog that says the data was not found!
+                
+            }
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +47,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return movies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

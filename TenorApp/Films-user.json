@@ -1,0 +1,91 @@
+ [{
+  "id": 1,
+  "name": "Interstellar",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_UX140_CR0,0,140,209_AL_.jpg",
+  "desc": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+  "long_desc" : "To paraphrase Sally Field's famous Oscar acceptance speech, we can't deny that, right now, IMDb users really like Christopher Nolan: He directed 5 of the 25 films on this list, more than anybody else. Although less of a critical and commercial blockbuster than Inception, and perhaps hampered by the weight of lofty expectations (and comparisons with 2001: A Space Odyssey), Interstellar is pure, classic sci-fi that shows that you can dazzle audiences even without showing a single alien or lightsaber."
+  },{
+  "id": 2,
+  "name": "The Wolf of Wall Street",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_UY209_CR0,0,140,209_AL_.jpg",
+  "desc": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
+  "long_desc" : "Tackling a different kind of bad guy, The Wolf of Wall Street displays much of the same manic energy and breakneck pace that fuels Goodfellas. But this time, the criminal, whose rise and fall are chronicled over the course of three profanity-laced hours, doesn't use a gun or his fists to maim or ruin people's lives. Nevertheless, audiences have found him to be even more loathsome and despicable than the Mafiosi from Scorsese's previous films. The Wolf of Wall Street is very funny at times, and Leonardo DiCaprio gives Scorsese another fully committed performance. But you may feel the need to take a shower after watching it."
+  },{
+  "id": 3,
+  "name": "Django Unchained",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_UY209_CR0,0,140,209_AL_.jpg",
+  "desc": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
+  "long_desc" : "The latest stop in Quentin Tarantino's journey through the 20th-century period genre borrows the name of its hero from a series of Italian spaghetti westerns and takes inspiration from those films for its revenge-fueled storyline. But everything else in this film is pure Tarantino — from the typically ornate dialogue to the memorable and, in Christopher Waltz's case, Oscar-worthy performances of a stellar cast. Audiences responded in droves, giving Quentin the biggest commercial hit of his career."
+  },{
+  "id": 4,
+  "name": "The Intouchables",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_UY209_CR0,0,140,209_AL_.jpg",
+  "desc": "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.",
+  "long_desc" : "Movies about disabilities and broken people too often cross the line into disease TV movie of the week territory. France's The Intouchables avoids this pitfall by virtue of its solid performances from Francois Cluzet as a wealthy paraplegic and Omar Sy as the caretaker who refuses to pity him and manages to be moving without resorting to cheap sentimentality. The film was a huge hit in Europe but not in the U.S., proving once again that IMDb users are a very culturally diverse and geographically varied audience."
+  },{
+  "id": 5,
+  "name": "Inception",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_UY209_CR0,0,140,209_AL_.jpg",
+  "desc": "A thief, who steals corporate secrets through use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO.",
+  "long_desc" : "Thanks to the unprecedented commercial success of The Dark Knight, Christopher Nolan had enough clout and resources to get Inception made. We can all be grateful for that, as he gave us the most original and dazzling science-fiction of the decade — and possibly the century so far. A heady mix of sci-fi action, mind-bending visuals, and metaphysical discussions on the relationship between reality and perception, Inception is a groundbreaking film whose IMDb ratings overshadow almost every other film made in 2010."
+  },{
+  "id": 6,
+  "name": "Inglourious Basterds",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_UY209_CR0,0,140,209_AL_.jpg",
+  "desc": "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.",
+  "long_desc" : "Taking inspiration from the title (and nothing else) of a WWII-era, Italian B movie, Inglorious Basterds showed that Tarantino still had many tricks up his sleeve: He introduced talents who were at that point undiscovered by American audiences (in this case Christoph Waltz and Melanie Laurent), he could write long but never boring setpieces that relied on nothing but dialogue to create tension (that farmhouse opening scene!), and he could pull off the feat of (spoiler alert!) rewriting the course of history without affecting the audience's suspension of disbelief."
+  },{
+  "id": 7,
+  "name": "The Dark Knight",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UY209_CR0,0,140,209_AL_.jpg",
+  "desc": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.",
+  "long_desc" : "Expectations for The Dark Knight were high, but few people could predict that the film would become such a monster hit, becoming the first film to pass $500 million in domestic box office and holding the record for most commercially successful superhero movie of all time before The Avengers). The Dark Knight proved that movies starring a guy in a cape and spandex pants could deliver more than lightweight escapism and gave us one of movie history's most memorable villain: Heath Ledger's Joker, an unforgettable performance that sadly had to be recognized posthumously by the Academy."
+  },{
+  "id": 8,
+  "name": "Into the Wild",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTAwNDEyODU1MjheQTJeQWpwZ15BbWU2MDc3NDQwNw@@._V1_UY209_CR1,0,140,209_AL_.jpg",
+  "desc": "After graduating from Emory University, top student and athlete Christopher McCandless abandons his possessions, gives his entire $24,000 savings account to charity and hitchhikes to Alaska to live in the wilderness. Along the way, Christopher encounters a series of characters that shape his life.",
+  "long_desc" : "Proving once again that life is all about the journey and not the destination, Into the Wild manages to be touching and exhilarating even to audiences who are aware that (spoiler alert!) things are not going to end well for the protagonist. Based on a true story popularized by Jon Krakauer's non-fiction book, Into The Wild follows the adventure and travels of a free-spirited young man named Alexander McCandless. The ultimately uplifting message of this film, inspired by the road movies of the '60s and '70s, have clearly resonated with IMDb audiences, who surprisingly have rated it as the top film of 2007 (ahead of No Country for Old Men and There Will Be Blood)."
+  },{
+  "id": 9,
+  "name": "The Departed",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_UY209_CR0,0,140,209_AL_.jpg",
+  "desc": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+  "long_desc" : "Maybe the most amazing feat of The Departed is that it fits perfectly within Martin Scorsese's oeuvre despite being a remake of a foreign language film, (Infernal Affairs). Part of the credit goes to William Mohahan's screenplay, which transports the action from Hong Kong to Boston, and to a stellar cast, led by Jack Nicholson's performance as a Whitey Bulger-inspired gangster. But it is Scorsese's sure-handed direction that seals the deal and finally earned him a long-overdue Best Director."
+  },{
+  "id": 10,
+  "name": "Batman Begins",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTM3OTc0MzM2OV5BMl5BanBnXkFtZTYwNzUwMTI3._V1_UY209_CR0,0,140,209_AL_.jpg",
+  "desc": "After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from the corruption that Scarecrow and the League of Shadows have cast upon it.",
+  "long_desc" : "It's easy to take for granted the commercial and artistic success of Batman Begins. But when it was first announced, Christopher Nolan and Christian Bale were hardly household names, and the successful reboot of a franchise that seemed dead and buried after the campy catastrophe of Batman & Robin was far from guaranteed. Nevertheless, audiences and IMDb users immediately welcomed this darker take on the Caped Crusader, which was helped immensely by inspired choices for the supporting cast, including Michael Caine and Gary Oldman, and set the stage for the triumphant return of the franchise three years later."
+  },{
+  "id": 11,
+  "name": "Eternal Sunshine of the Spotless Mind",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_UY209_CR0,0,140,209_AL_.jpg",
+  "desc": "When their relationship turns sour, a couple undergoes a procedure to have each other erased from their memories. But it is only through the process of loss that they discover what they had to begin with.",
+  "long_desc" : "It's a shame that Jim Carrey has never received the respect he deserves as a dramatic actor. It's certainly not for lack of trying, as films like Man on the Moon and especially Eternal Sunshine of the Spotless Mind clearly attest. But if critics and award organizations have been reluctant to recognize him, the same can't be said of IMDb users, who rated this film as the best of 2004 largely on the strength of his performance and Charlie Kaufman's exceptional and Oscar-winning screenplay."
+  },{
+  "id": 12,
+  "name": "The Lord of the Rings: The Return of the King",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE4MjA1NTAyMV5BMl5BanBnXkFtZTcwNzM1NDQyMQ@@._V1_UY209_CR0,0,140,209_AL_.jpg",
+  "desc": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+  "long_desc" : "The conclusion of Peter Jackson's epic Tolkien trilogy did not disappoint audiences, who rewarded it with 11 Academy Awards (to tie the record set by Ben-Hur and Titanic) and with a worldwide box office gross of more than $1.1 billion. Although a bit overlong, especially due to a series of multiple endings, the film represents the pinnacle of the trilogy and Peter Jackson's career. None of his Hobbit movies, although still well regarded by IMDb users, comes close to receiving a similarly high rating."
+  },{
+  "id": 13,
+  "name": "The Lord of the Rings: The Two Towers",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNDU0NjY4NTheQTJeQWpwZ15BbWU2MDk4MTY2Nw@@._V1_UY209_CR1,0,140,209_AL_.jpg",
+  "desc": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+  "long_desc" : "The Empire Strikes Back notwithstanding, the middle installment of a movie trilogy is often a transitional film that doesn't eclipse its predecessor and sets the tone for the final episode. The Two Towers is no exception to this rule, largely continuing the path set by The Fellowship of the Ring and offering a number of visual setpieces, including the epic battle of Helm's Deep, along the way. But Tolkien-loving IMDb users still voted it the top film of the year, beating other worthy contenders like Brazil's Oscar-nominated City of God."
+  },{
+  "id": 14,
+  "name": "The Lord of the Rings: The Fellowship of the Ring ",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTEyMjAwMDU1OV5BMl5BanBnXkFtZTcwNDQyNTkxMw@@._V1_UY209_CR1,0,140,209_AL_.jpg",
+  "desc": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle Earth from the Dark Lord Sauron.",
+  "long_desc" : "An ancient Ring thought lost for centuries has been found, and through a strange twist in fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to the Cracks of Doom in order to destroy it! However he does not go alone. He is joined by Gandalf, Legolas the elf, Gimli the Dwarf, Aragorn, Boromir and his three Hobbit friends Merry, Pippin and Samwise. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign!"
+  },{
+  "id": 15,
+  "name": "Memento",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BNThiYjM3MzktMDg3Yy00ZWQ3LTk3YWEtN2M0YmNmNWEwYTE3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY209_CR1,0,140,209_AL_.jpg",
+  "desc": "A man juggles searching for his wife's murderer and keeping his short-term memory loss from being an obstacle.",
+  "long_desc" : "Sometimes IMDb audiences' tastes align with the mainstream; sometimes they manage to blaze the trail and point others to undiscovered gems. Memento is an example of the latter: Ever since its debut at European festivals, it gathered enthusiastic reviews by our users and sparked positive word of mouth, which kept gathering momentum as the film debuted in the U.S. at Sundance. Months later, IMDb users could not stop talking about the film's serpentine plot and timeline, and catapulted it to the top of our highest-rated films of the year."
+  }]

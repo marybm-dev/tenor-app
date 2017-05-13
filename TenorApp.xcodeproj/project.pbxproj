@@ -12,6 +12,10 @@
 		44DC46261EC78468003C33F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44DC46241EC78468003C33F5 /* Main.storyboard */; };
 		44DC46281EC78468003C33F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DC46271EC78468003C33F5 /* Assets.xcassets */; };
 		44DC462B1EC78468003C33F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44DC46291EC78468003C33F5 /* LaunchScreen.storyboard */; };
+		44DC46331EC78984003C33F5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DC46321EC78984003C33F5 /* Movie.swift */; };
+		44DC46351EC78B13003C33F5 /* MovieClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DC46341EC78B13003C33F5 /* MovieClient.swift */; };
+		44DC46381EC78D71003C33F5 /* Films-critic.json in Resources */ = {isa = PBXBuildFile; fileRef = 44DC46361EC78D71003C33F5 /* Films-critic.json */; };
+		44DC46391EC78D71003C33F5 /* Films-user.json in Resources */ = {isa = PBXBuildFile; fileRef = 44DC46371EC78D71003C33F5 /* Films-user.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		44DC46271EC78468003C33F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44DC462A1EC78468003C33F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44DC462C1EC78468003C33F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44DC46321EC78984003C33F5 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = Model/Movie.swift; sourceTree = "<group>"; };
+		44DC46341EC78B13003C33F5 /* MovieClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieClient.swift; path = API/MovieClient.swift; sourceTree = "<group>"; };
+		44DC46361EC78D71003C33F5 /* Films-critic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Films-critic.json"; sourceTree = "<group>"; };
+		44DC46371EC78D71003C33F5 /* Films-user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Films-user.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,41 @@
 			isa = PBXGroup;
 			children = (
 				44DC46201EC78468003C33F5 /* AppDelegate.swift */,
-				44DC46221EC78468003C33F5 /* ViewController.swift */,
+				44DC463C1EC78D84003C33F5 /* View Controllers */,
+				44DC463A1EC78D77003C33F5 /* Model */,
+				44DC463B1EC78D7D003C33F5 /* API */,
 				44DC46241EC78468003C33F5 /* Main.storyboard */,
 				44DC46271EC78468003C33F5 /* Assets.xcassets */,
 				44DC46291EC78468003C33F5 /* LaunchScreen.storyboard */,
 				44DC462C1EC78468003C33F5 /* Info.plist */,
 			);
 			path = TenorApp;
+			sourceTree = "<group>";
+		};
+		44DC463A1EC78D77003C33F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44DC46321EC78984003C33F5 /* Movie.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		44DC463B1EC78D7D003C33F5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				44DC46341EC78B13003C33F5 /* MovieClient.swift */,
+				44DC46361EC78D71003C33F5 /* Films-critic.json */,
+				44DC46371EC78D71003C33F5 /* Films-user.json */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		44DC463C1EC78D84003C33F5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44DC46221EC78468003C33F5 /* ViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +160,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44DC46391EC78D71003C33F5 /* Films-user.json in Resources */,
 				44DC462B1EC78468003C33F5 /* LaunchScreen.storyboard in Resources */,
 				44DC46281EC78468003C33F5 /* Assets.xcassets in Resources */,
 				44DC46261EC78468003C33F5 /* Main.storyboard in Resources */,
+				44DC46381EC78D71003C33F5 /* Films-critic.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +177,8 @@
 			files = (
 				44DC46231EC78468003C33F5 /* ViewController.swift in Sources */,
 				44DC46211EC78468003C33F5 /* AppDelegate.swift in Sources */,
+				44DC46331EC78984003C33F5 /* Movie.swift in Sources */,
+				44DC46351EC78B13003C33F5 /* MovieClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
