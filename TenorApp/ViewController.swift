@@ -22,8 +22,8 @@ class ViewController: UIViewController {
     
     var endPoint: MovieEndPoint! {
         didSet {
+            // add delay to view activity indicator before loading data
             KVNProgress.show()
-            // add delay to view activity indicator
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
                 self.loadData()
             }
