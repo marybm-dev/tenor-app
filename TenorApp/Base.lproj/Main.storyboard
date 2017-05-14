@@ -25,11 +25,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="131" id="Hj8-Ch-7jv" customClass="MovieTableViewCell" customModule="TenorApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="131"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="132" id="Hj8-Ch-7jv" customClass="MovieTableViewCell" customModule="TenorApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="132"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hj8-Ch-7jv" id="GjI-eV-mUj">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="130.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="131.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Tl-t1-TX6">
@@ -39,14 +39,14 @@
                                                         <constraint firstAttribute="height" constant="110" id="f6s-a6-gOL"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bua-B8-5ZM">
-                                                    <rect key="frame" x="103" y="10" width="34" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bua-B8-5ZM">
+                                                    <rect key="frame" x="103" y="10" width="232" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onh-im-Wj9">
-                                                    <rect key="frame" x="103" y="39" width="232" height="15"/>
+                                                    <rect key="frame" x="103" y="36" width="232" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -64,10 +64,12 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Onh-im-Wj9" firstAttribute="top" secondItem="bua-B8-5ZM" secondAttribute="bottom" constant="8" id="4i1-tZ-fOM"/>
+                                                <constraint firstItem="Onh-im-Wj9" firstAttribute="top" secondItem="bua-B8-5ZM" secondAttribute="bottom" constant="5" id="4i1-tZ-fOM"/>
                                                 <constraint firstItem="bua-B8-5ZM" firstAttribute="leading" secondItem="6Tl-t1-TX6" secondAttribute="trailing" constant="8" id="CGl-LZ-b20"/>
                                                 <constraint firstItem="6Tl-t1-TX6" firstAttribute="leading" secondItem="GjI-eV-mUj" secondAttribute="leading" constant="15" id="RSX-Hl-YIz"/>
+                                                <constraint firstItem="Onh-im-Wj9" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="6Tl-t1-TX6" secondAttribute="bottom" id="WV6-6T-IWX"/>
                                                 <constraint firstItem="Iyt-B4-bhN" firstAttribute="centerY" secondItem="GjI-eV-mUj" secondAttribute="centerY" id="Wtf-yv-3vW"/>
+                                                <constraint firstItem="bua-B8-5ZM" firstAttribute="trailing" secondItem="Onh-im-Wj9" secondAttribute="trailing" id="gec-pG-1ke"/>
                                                 <constraint firstItem="6Tl-t1-TX6" firstAttribute="top" secondItem="GjI-eV-mUj" secondAttribute="top" constant="10" id="lOV-OO-oWn"/>
                                                 <constraint firstItem="Iyt-B4-bhN" firstAttribute="leading" secondItem="Onh-im-Wj9" secondAttribute="trailing" constant="10" id="mNC-AK-d7y"/>
                                                 <constraint firstAttribute="trailing" secondItem="Iyt-B4-bhN" secondAttribute="trailing" constant="10" id="mWB-X7-4zR"/>
