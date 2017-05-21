@@ -15,8 +15,6 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var movieDescriptionLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     
-    weak var tableView: UITableView!
-    
     var movie: Movie! {
         didSet {
             self.movieNameLabel.text = movie.name

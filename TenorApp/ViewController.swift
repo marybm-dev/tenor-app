@@ -59,7 +59,7 @@ class ViewController: UIViewController {
                 let oldMovies = self?.movies
                 var newMovies = [Movie]()
                 
-                // retain the existing Movies and add the new new ones
+                // retain the existing Movies and add the new ones
                 for movie in theMovies {
                     if (oldMovies?.contains(where: {
                         if $0.id == movie.id {
@@ -105,10 +105,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieTableViewCell
-        
-        cell.tableView = tableView
         cell.movie = movies[indexPath.row]
-        
         return cell
     }
     
