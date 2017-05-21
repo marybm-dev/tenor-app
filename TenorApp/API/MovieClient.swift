@@ -21,7 +21,7 @@ enum MovieError: Error {
 class MovieClient {
     
     static func movies(endPoint: MovieEndPoint, completion: @escaping (_ movies: [Movie]?, _ error: Error?) -> Void) {
-        guard let movies = self.readJson(endPoint: endPoint) else {
+        guard let movies = self.readJson(at: endPoint) else {
             completion(nil, MovieError.jsonNotFound)
             return
         }
@@ -29,7 +29,7 @@ class MovieClient {
         completion(movies, nil)
     }
     
-    static func readJson(endPoint: MovieEndPoint) -> [Movie]? {
+    static func readJson(at endPoint: MovieEndPoint) -> [Movie]? {
         var movies = [Movie]()
         var filepath: String?
         
@@ -53,7 +53,7 @@ class MovieClient {
             let jsonDict = JSON(data)
             
             for (_,movieJson):(String, JSON) in jsonDict {
-                movies.append(Movie(json: movieJson))
+                movies.append(Movie(from: movieJson))
             }
             
         } catch {

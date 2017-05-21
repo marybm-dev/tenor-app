@@ -17,7 +17,7 @@ class Movie: NSObject {
     var longDesc: String?
     dynamic var favorited: Bool = false
     
-    init(json: JSON) {
+    init(from json: JSON) {
         id = json["id"].int
         name = json["name"].string
         image = json["image"].url

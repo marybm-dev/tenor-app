@@ -76,17 +76,21 @@ class ViewController: UIViewController {
                 self?.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
 
             } else {
-                // display alert dialog that says the data was not found
-                let alertController = UIAlertController(title: "Uh oh. Something went wrong", message: "Couldn't get movie data.", preferredStyle: UIAlertControllerStyle.alert)
-                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
-                    print("OK")
-                }
-                alertController.addAction(okAction)
-                self?.present(alertController, animated: true, completion: nil)
+                self?.displayDataNotFoundAlert()
+                
             }
             
             KVNProgress.dismiss()
         }
+    }
+    
+    func displayDataNotFoundAlert() {
+        let alertController = UIAlertController(title: "Uh oh. Something went wrong", message: "Couldn't get movie data.", preferredStyle: UIAlertControllerStyle.alert)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
+            print("OK")
+        }
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
