@@ -53,7 +53,7 @@ class ViewController: UIViewController {
     }
     
     func loadData() {
-        MovieClient.movies(endPoint: self.endPoint) { [weak self] (endPointMovies: [Movie]?, error: Error?) in
+        MovieClient.movies(at: self.endPoint) { [weak self] (endPointMovies: [Movie]?, error: Error?) in
             
             if let theMovies = endPointMovies {
                 let oldMovies = self?.movies

@@ -20,7 +20,7 @@ enum MovieError: Error {
 
 class MovieClient {
     
-    static func movies(endPoint: MovieEndPoint, completion: @escaping (_ movies: [Movie]?, _ error: Error?) -> Void) {
+    static func movies(at endPoint: MovieEndPoint, completion: @escaping (_ movies: [Movie]?, _ error: Error?) -> Void) {
         guard let movies = self.readJson(at: endPoint) else {
             completion(nil, MovieError.jsonNotFound)
             return
